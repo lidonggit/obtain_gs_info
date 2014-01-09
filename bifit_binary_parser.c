@@ -16,7 +16,7 @@
 #include "dwarf.h"
 #include "libdwarf.h"
 
-//#define MY_DEBUG
+#define MY_DEBUG
 
 struct srcfilesdata {
   char ** srcfiles;
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
   if(argc != 4) 
   {
-    printf("Usage: obtain_static_global_variables binary_file_path app_keyword language_name(fortran or c)\n");
+    printf("Usage: bifit_binary_parser binary_file_path app_keyword language_name(fortran or c)\n");
     exit(1);
   } 
   else 
